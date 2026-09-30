@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Werrberus Discord Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <span>🐺 Werrberus</span>
+        <span class="brand-badge">Privacy First</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html" class="active">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="legal-card">
+      <div class="legal-header">
+        <h1>Privacy Policy</h1>
+        <div class="meta-info">
+          <span>Effective Date: September 30, 2026</span>
+          <span>•</span>
+          <span>Version: 1.0</span>
+        </div>
+      </div>
+
+      <p>At <strong>Werrberus</strong>, we believe privacy is a fundamental right. Unlike conventional bots that log personal conversations and harvest user behavior into commercial databases, Werrberus was engineered under a strict <strong>Zero Data Retention & Stateless Architecture</strong>.</p>
+
+      <h2>1. The Zero-Retention Principle</h2>
+      <div class="highlight-box">
+        <strong>Guaranteed Stateless Operation:</strong> Werrberus does not store, monetize, track, or profile personal user data. All threat analyses occur strictly in transient RAM using CPU mathematical models. Once an event is analyzed, its raw contents are instantly released from memory.
+      </div>
+
+      <h2>2. Information Processed in Real-Time</h2>
+      <p>To defend Discord servers against raid swarms, phishing scams, and malicious drainers, Werrberus inspects the following event data in volatile memory (RAM) exclusively during runtime evaluation:</p>
+      <ul>
+        <li><strong>Discord Snowflake IDs:</strong> Inspected for GAP-0331 Z/9Z modular residue clustering and creation epoch delta calculations to detect coordinated botnet swarms.</li>
+        <li><strong>Account Metadata:</strong> Account creation timestamp and avatar presence (used to assess account freshness and burst risk).</li>
+        <li><strong>Message Content:</strong> Inspected transiently to detect dangerous URLs, typosquatting domains, crypto drainer patterns, and high-entropy token-stealer payloads.</li>
+        <li><strong>Audit Log Records:</strong> Inspected solely when mass channel or role deletions occur to identify compromised rogue administrative accounts.</li>
+      </ul>
+
+      <h2>3. Information Stored Persistently</h2>
+      <p>The only information stored persistently on disk is guild configuration settings in a local <code>guild_settings.json</code> file:</p>
+      <ul>
+        <li><strong>Guild ID:</strong> The numerical Discord ID of the server.</li>
+        <li><strong>Configured Log Channel ID:</strong> The channel where security alerts and review cards are dispatched.</li>
+        <li><strong>Operational Thresholds:</strong> The selected security profile (<code>balanced</code>, <code>strict</code>, or <code>relaxed</code>) and user-adjusted numeric limits (e.g., join burst threshold, spam limits).</li>
+      </ul>
+      <p><em>No usernames, avatar images, messages, IP addresses, or message history are ever stored on disk or transferred to third-party databases.</em></p>
+
+      <h2>4. Third-Party Sharing and Tracking</h2>
+      <p>We do not share, sell, rent, or distribute any user or guild data to third parties, advertising networks, or external analytics vendors. Werrberus operates 100% self-contained without external third-party API dependencies or tracking pixels.</p>
+
+      <h2>5. Data Subject Rights & Data Deletion</h2>
+      <p>Because Werrberus retains no personal user data, there is no personal database record to query or delete. If a server administrator wishes to remove all persistent guild configuration settings:</p>
+      <ul>
+        <li>Run the <code>/werr reset</code> slash command to restore all guild settings to default.</li>
+        <li>Removing or kicking Werrberus from the server immediately terminates all processing for that guild.</li>
+        <li>Guild owners may request manual deletion of their guild configuration record at any time by contacting the bot developers.</li>
+      </ul>
+
+      <h2>6. Compliance with Discord Developer Policy</h2>
+      <p>Werrberus complies fully with the <a href="https://discord.com/developers/docs/policies-and-agreements/developer-policy" target="_blank" style="color: var(--accent-cyan);">Discord Developer Policy</a> and <a href="https://discord.com/developers/docs/policies-and-agreements/developer-terms-of-service" target="_blank" style="color: var(--accent-cyan);">Developer Terms of Service</a>, specifically concerning data minimization, transparency, and intent usage.</p>
+
+      <h2>7. Updates to This Policy</h2>
+      <p>We may update this Privacy Policy to reflect technical enhancements or regulatory changes. Any modifications will be posted to this page with an updated effective date.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions or privacy inquiries regarding Werrberus, please reach out via our GitHub repository or contact our team through Discord.</p>
+    </div>
+
+    <footer class="footer">
+      <p>© 2026 Werrberus Security Systems. All rights reserved. Not affiliated with Discord Inc.</p>
+    </footer>
+  </main>
+
+</body>
+</html>
