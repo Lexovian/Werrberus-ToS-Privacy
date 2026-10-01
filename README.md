@@ -39,41 +39,9 @@ When deployed to GitHub Pages, the following URLs provide compliance endpoints f
 
 ---
 
-## 🚀 3. How to Deploy to GitHub Pages
-
-To host these compliance pages on GitHub Pages:
-
-### Step 1: Initialize the Legal Repository
-Open a terminal in this directory (or copy the contents of `/docs` to a clean folder):
-
-```bash
-git init
-git add .
-git commit -m "docs: Werrberus legal & privacy compliance suite v1.1"
-git branch -M main
-git remote add origin https://github.com/<your-username>/Werrberus-ToS-Privacy.git
-git push -u origin main
-```
-
-### Step 2: Enable GitHub Pages
-1. Navigate to your repository on GitHub.
-2. Go to **Settings** $\rightarrow$ **Pages** (under "Code and automation").
-3. Under **Build and deployment** $\rightarrow$ **Source**:
-   - Source: **Deploy from a branch**
-   - Branch: `main` | Folder: `/ (root)`
-4. Click **Save**. Within 1–2 minutes, your site will be live.
-
-### Step 3: Link in Discord Developer Portal
-Copy the live URLs into your application profile:
-1. Go to [Discord Developer Portal](https://discord.com/developers/applications) $\rightarrow$ Your Application $\rightarrow$ **General Information**.
-2. Set **Terms of Service URL:** `https://<your-username>.github.io/Werrberus-ToS-Privacy/terms.html`
-3. Set **Privacy Policy URL:** `https://<your-username>.github.io/Werrberus-ToS-Privacy/privacy.html`
-4. Click **Save Changes**.
-
----
-
-## 📬 4. Contact & Developer Support
+## 📬 3. Contact & Developer Support
 
 For security disclosures, verification inquiries, or technical support:
 * **Discord:** Available via Discord Developer Portal
 * **Documentation Portal:** [https://lexovian.github.io/Werrberus-ToS-Privacy/](https://lexovian.github.io/Werrberus-ToS-Privacy/)
+
