@@ -33,7 +33,7 @@ When deployed to GitHub Pages, the following URLs provide compliance endpoints f
 ## 🔒 2. Privacy Policy Summary
 
 * **The Zero-Retention Principle:** Werrberus operates on a 100% stateless architecture. No usernames, messages, avatar graphics, or conversation histories are ever logged or written to disk.
-* **Volatile Memory (RAM Only):** Real-time mathematical inspection of Discord Snowflake IDs (GAP-0331 $\mathbb{Z}/9\mathbb{Z}$ ring invariants), message regex patterns, and Shannon entropy ($H > 4.70$ bits/character). Once evaluated, raw event data is discarded immediately from memory.
+* **Volatile Memory (RAM Only):** Real-time mathematical inspection of Discord Snowflake IDs (GAP-0331 Z/9Z ring invariants), message regex patterns, and Shannon entropy (H > 4.70 bits/character). Once evaluated, raw event data is discarded immediately from memory.
 * **Persistent Disk Storage:** The **only** file written to disk is `guild_settings.json`, containing numeric server IDs and administrator-configured threshold numbers.
 * **Privileged Gateway Intents:** Full transparency for `Server Members Intent` (join-burst monitoring) and `Message Content Intent` (real-time phishing/token grabber mitigation).
 

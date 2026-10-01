@@ -54,13 +54,13 @@
       </p>
       <ul>
         <li>
-          <strong>Discord Snowflake IDs:</strong> Evaluated using GAP-0331 $\mathbb{Z}/9\mathbb{Z}$ ring algebra invariants (residue congruences in $I_3=\{0,3,6\}$) and account creation epoch deltas ($\Delta t &lt; 48h$) to detect coordinated Sybil botnet swarms.
+          <strong>Discord Snowflake IDs:</strong> Evaluated using GAP-0331 Z/9Z ring algebra invariants (residue congruences in I₃ = {0, 3, 6}) and account creation epoch deltas (Δt &lt; 48h) to detect coordinated Sybil botnet swarms.
         </li>
         <li>
           <strong>Account Metadata:</strong> Account creation timestamp and avatar existence flags to determine account freshness and join burst anomalies.
         </li>
         <li>
-          <strong>Message & Attachment Content:</strong> Inspected transiently to detect dangerous URLs, typosquatting domains, crypto drainers, high-entropy Base64 token grabbers ($H &gt; 4.70$), and QR code login hijack traps.
+          <strong>Message & Attachment Content:</strong> Inspected transiently to detect dangerous URLs, typosquatting domains, crypto drainers, high-entropy Base64 token grabbers (H &gt; 4.70 bits/char), and QR code login hijack traps.
         </li>
         <li>
           <strong>Audit Log Records:</strong> Inspected strictly during rapid channel or role deletion spikes to identify compromised administrator accounts (Anti-Nuke protection).
